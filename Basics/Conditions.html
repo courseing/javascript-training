@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            document.getElementById("titleTop").innerHTML = "Text Changed using JavaScript";
+        </script>
+    </head>
+<body>
+    <script>
+        function ChangeHtmlText()
+        {
+            document.getElementById("subtitle1").innerHTML = "Text Changed using JavaScript";
+        }
+    </script>
+
+    <h2>What Can JavaScript Do?</h2>
+
+    <p id="titleTop">HTML content.</p>
+    <p id="titleBottom">HTML content.</p>
+    <p id="subtitle1">HTML content.</p>
+    <p id="subtitle2">HTML content.</p>
+
+    <button type="button" onclick="ChangeHtmlText()" >Click</button>
+    <button type="button" onclick="ChangeHtmlTextSubTitle()" >Click</button>
+
+    <script>
+            document.getElementById("titleBottom").innerHTML = "Text Changed using JavaScript : Bottom";
+            function ChangeHtmlTextSubTitle()
+            {
+                document.getElementById("subtitle2").innerHTML = "Text Changed from Script Block in Bottom";
+            }
+    </script>
+    
+</body>
+</html>

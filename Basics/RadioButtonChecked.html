@@ -1,0 +1,30 @@
+
+
+
+<!DOCTYPE html>
+<html>
+    <script>
+        function FindCheckedRadioButton()
+        {
+            var genders = document.getElementsByName('gender');
+            for(var i = 0; i < genders.length; i++){
+                if(genders[i].checked){
+                    document.getElementById("Gender").innerHTML = genders[i].value
+                }
+            }
+
+        }
+    </script>
+<body>
+
+    <div id="rates">
+        <input type="radio" id="male" name="gender" value="Male"> Male
+        <input type="radio" id="female" name="gender" value="Female"> Female
+    </div>
+
+    <button type="button"  onclick='FindCheckedRadioButton()'>Click</button>
+    <p id="Gender"></p>
+<!-- <button type="button" >Click</button> -->
+
+</body>
+</html>
